@@ -3,71 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Descargar Himnario</title>
+    <title>Descargar Himnario IPECHi</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f6f9;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #eef2f5;
             color: #333;
-            text-align: center;
-            padding: 40px 20px;
             margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
         }
         .container {
-            max-width: 500px;
+            max-width: 400px;
             background: white;
-            padding: 30px;
-            border-radius: 20px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-            margin: 0 auto;
+            padding: 40px 30px;
+            border-radius: 25px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+            text-align: center;
+        }
+        .icon {
+            font-size: 60px;
+            margin-bottom: 20px;
         }
         h1 {
-            color: #2c3e50;
-            font-size: 28px;
-            margin-bottom: 10px;
+            color: #1a2a6c;
+            font-size: 24px;
+            margin-bottom: 15px;
         }
         p {
-            font-size: 18px;
-            line-height: 1.5;
-            color: #555;
+            font-size: 16px;
+            color: #666;
             margin-bottom: 30px;
+            line-height: 1.6;
         }
         .btn-download {
-            display: inline-block;
-            background-color: #2ecc71;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #2563eb;
             color: white;
             text-decoration: none;
-            font-size: 22px;
-            font-weight: bold;
-            padding: 20px 40px;
-            border-radius: 50px;
-            box-shadow: 0 5px 10px rgba(46, 204, 113, 0.3);
-            transition: transform 0.2s;
+            font-size: 18px;
+            font-weight: 600;
+            padding: 18px 30px;
+            border-radius: 15px;
+            transition: all 0.3s ease;
+            width: 100%;
+            box-sizing: border-box;
         }
-        .btn-download:active {
-            transform: scale(0.95);
+        .btn-download:hover {
+            background-color: #1d4ed8;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(37, 99, 235, 0.3);
         }
         .info-nota {
-            margin-top: 25px;
-            font-size: 14px;
-            color: #7f8c8d;
+            margin-top: 30px;
+            font-size: 13px;
+            color: #94a3b8;
+            background: #f8fafc;
+            padding: 15px;
+            border-radius: 12px;
         }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <h1>📖 Himnario IPECHi</h1>
-        <p>Presiona el botón de abajo para instalar la última versión de la aplicación en tu teléfono Android.</p>
+        <div class="icon">📖</div>
+        <h1>Himnario IPECHi</h1>
+        <p>Instala la última versión directamente en tu dispositivo Android.</p>
         
         <a href="app-debug.apk" class="btn-download" download="Himnario_IPECHi.apk">
-    📥 INSTALAR AHORA
-</a>
-            📥 INSTALAR AHORA
+            📥 Descargar APK
         </a>
 
         <div class="info-nota">
-            * Si tu teléfono te pide permisos para instalar, selecciona "Permitir desde esta fuente".
+            <b>Nota:</b> Si el sistema bloquea la instalación, ve a Ajustes y selecciona "Permitir desde esta fuente".
         </div>
     </div>
 
